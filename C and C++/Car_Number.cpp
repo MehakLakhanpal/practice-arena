@@ -7,14 +7,14 @@ int main()
 	while(N--)
 	{
 		cin>>Number;
-		int sum=0;
+		int sum;
 //		while(Number!=0)
 //		{
 //			sum +=Number%10;
 //			Number/=10;
 //		}
 		// Because it is given that a car number would be 4 digit.
-		sum = Number%10 + Number%100 + Number%1000 + Number/1000; 
+		sum = Number%10 + (Number%100)/10 + (Number%1000)/100 + Number/1000; 
 		if(sum%2==0)
 		{
 			if(sum%4==0)
