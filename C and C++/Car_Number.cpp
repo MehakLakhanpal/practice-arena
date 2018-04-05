@@ -31,8 +31,10 @@ int main()
 		if(sum[counter]%3==0)
 			cout<<"Yes"<<endl;
 		else if (sum[counter]%4==0){
-			if(sum[counter]%2==0)
-				cout<<"Yes"<<endl;	
+			if(number[counter]%2==0)
+				cout<<"Yes"<<endl;
+			else
+				cout<<"No"<<endl;
 		}			
 		else
 			cout<<"No"<<endl;
