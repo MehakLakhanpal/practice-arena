@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+  <style>
+  body {background-color:white;}
+  dd{
+    color:grey;
+    font-size:20px;
+    font-family:'Sofia';
+  } 
+  .mySlides {display:none;}
+  .imginsta{float:right; right: 0;
+    border: 1px solid black;
+    border-radius: 4px;
+    height:50px;
+    width:90px;
+    top:0;
+  }
+  h1{color:white;font-size:20px;}
+  h2 {font-family: 'Sofia';font-size: 30px;
+  color:red;
+  text-align:center;
+  text-size:20px;
+}
+.backw{
+ background-color:black;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+  margin: 0 auto;
+  width: 70%;
+}
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: grey;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover{
+  text-decoration: underline;
+  text-decoration-color: red;
+  color:black;
+}
+li.dropdown {
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  z-index: 1;}
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  .image1{
+   max-height=100%;
+   width:100%;
+   display:block;
+ }
+
+ .dropdown:hover .dropdown-content {
+  display: block;}
+</style>
+<head>
+  <body>
+    <div style="background-color:black;height=100px;">
+      <div style="width: 250px;background-color:red;border:1px red solid;border-radius:15px;">
+        <h1>Call Now:+91 97807-17663<h1></div>
+          <div style="text-align=right;">
+            <a href="s.html"><img class="imginsta" src="is.jpg" alt="instagram"></img></a></div>
+          </div>
+          <div>
+            <h2>Diligent</a></h2>
+            <ul>
+              <li><a href="#home">HOME</a></li>
+              <li><a href="#news">ABOUT US</a></li>
+              <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">COURSES</a>
+                <div class="dropdown-content">
+                  <a href="#">IELTS</a>
+                  <a href="#">SPOKEN ENGLISH</a>
+                  <a href="#">PTE</a>
+                </div>
+              </li>
+              <li><a href="#study">STUDY ABROAD</a></li>
+              <li><a href="#why">WHY US</a></li>
+              <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">DIRECTORS' WORD</a>
+                <div class="dropdown-content">
+                  <a href="#">MRS. ROHINI ARORA</a>
+                  <a href="#">MRS. JUGNU SANDHU</a>
+                  <a href="#">MR. RAJIV ARORA</a>
+                </div>
+              </li>
+              <li><a href="#contact">CONTACT US</a></li>
+            </ul>
+          </div>
+          <div>
+            <div style="background-color:red;max-width:4000px;display:block;margin:auto;width:96%;height:100px;"><h1 style="color:white;">A UNIQUE CENTER, PROMOTED BY NRIs AND ACADEMICIANS, FOR IELTS and ENGLISH SPEAKING COURSES DESIGNED FOR FAST RESULTS WITH SMART CLASS INFRASTRUCTURE.</h1></div>
+            <div style="max-width:4000px"><img class="image1" src="digi1.jpeg" alt="pic"style="width:96%;height:700px;display:block;margin:auto;" ></img></div></div>
+            <h1 id="news" style="font-family:'Sofia';color:red;text-align:center;text-shadow:1px 2px grey;font-size:45px;">ABOUT&nbsp&nbspUS</h1>
+            <dl>
+             <dd>We are a group of educationists who feel it is important for people like us to contribute towards the quality of education in our country. Cliched as it may sound, but, spreading knowledge and best practices are the only ways to increase awareness
+             and to progress.</dd>
+             <br>
+             <br>
+             <dd>The idea for this institute was conceived after considerable deliberations to ensure that we deliver what we promise: the promise to create an environment of learning.</dd>
+             <br>
+             <dd>A grueling research and training with British Council and American TESOL has been undertaken by the founding directors to ensure all aspects of English Proficiency Tests are accurately and clearly explained and tutored. We also pride ourselves at our in house training for our teaching faculty.</dd>
+             <br>
+           </dl>
+           <div class="w3-content w3-section" style="max-width:1000px">
+            <img class="mySlides" src="slide1.jpg" style="width:100%">
+            <img class="mySlides" src="slide2.jpg" style="width:100%">
+            <img class="mySlides" src="slide3.jpg" style="width:100%">
+          </div>
+
+          <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              for (i = 0; i < x.length; i++) {
+               x[i].style.display = "none";  
+             }
+             myIndex++;
+             if (myIndex > x.length) {myIndex = 1}    
+              x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+  }
+</script>
+<dl>
+  <dd>The idea for this institute was conceived after considerable deliberations to ensure that we deliver what we promise: the promise to create an environment of learning.</dd><br>
+  <dd>A grueling research and training with British Council and American TESOL has been undertaken by the founding directors to ensure all aspects of English Proficiency Tests are accurately and clearly explained and tutored. We also pride ourselves at our in house training for our teaching faculty.</dd></dl><br><br>
+</body>
+</html>
