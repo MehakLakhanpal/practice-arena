@@ -2,43 +2,33 @@
 using namespace std;
 int main()
 {
-	int n;
-	cin>>n;
-	int number[n];
-	int sum[n];
-	int counter=0;
-//	while(counter!=n)
-//	{
-//		cin>>number[counter];
-//		while(number[counter]!=0)
-//		{
-//			sum[counter] +=number[counter]%10;
-//			number[counter]/=10;
-//		}
-//		counter++;
-//	}
-	
-	while(counter!=n){
-		cin>>number[counter];
-		//Because it is known that car number is of 4-digit.
-		sum[counter] = number[counter]%10 + (number[counter]%100)/10 + (number[counter]%1000)/100 + number[counter]/1000; 
-		counter++;
-	}
-	
-	//Reset counter.
-	counter=0;
-	while(counter!=n){
-		if(sum[counter]%3==0)
-			cout<<"Yes"<<endl;
-		else if (sum[counter]%4==0){
-			if(number[counter]%2==0)
-				cout<<"Yes"<<endl;
+	int N,Number;
+	cin>>N;
+	while(N--)
+	{
+		cin>>Number;
+		int sum=0;
+	/*	while(Number!=0)
+		{
+			sum +=Number%10;
+			Number/=10;
+		}*/
+		sum=Number%10 + (Number%100)/10 + (Number%1000)/100 + Number/1000;
+		if(sum%2==0)
+		{
+			if(sum%4==0)
+			  cout<<"Yes"<<endl;
 			else
-				cout<<"No"<<endl;
-		}			
+			  cout<<"No"<<endl;
+			
+		}
 		else
-			cout<<"No"<<endl;
-		counter++;
+		{
+			if(sum%3==0)
+			  cout<<"Yes"<<endl;
+			else
+			  cout<<"No"<<endl;
+		}
 	}
 	return 0;
 }
